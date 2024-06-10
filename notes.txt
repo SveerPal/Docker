@@ -86,5 +86,28 @@ labs.play-with-docker.com website can live for 4-5 hour
 ##############################
 docker buildx build --plateform linux/amd64 -t <repositry name of docker hub >	
 	
+################################################################################################
+yashvir.ezrankings01@gmail.com
+yashvirezrankings01
+Ezitadmin@123
 
+docker pull mongo,postgres,mongo-express
+
+docker run --name my-first-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker ps
+docker ls
+docker image ls
+docker stop/start id/name
+
+docker container
+docker container ls/a
+docker container prune #delete all container 
+
+### Mongo ###
+docker run --name my-mongo -d mongo
+docker run --name my-mongo-port -p 4000:27017 mongo
+docker run --name my-mongo -d mongo:tag  #tag
+
+### 
+docker run -p 27017:27017 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG_MONGODB_ADMINPASSWORD=123456 --name mongodb --net mongo-network  -d mongo
 
